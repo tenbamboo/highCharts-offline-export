@@ -8,7 +8,7 @@ highCharts offline export ,https replace,no service can export,js export
 	<script src="canvg.min.js"></script>
 
 
-	replace highcharts code as a.post function :
+	replace highcharts code as a.post function(or  you can see js/replace.js file):
 
 
 	a.post = function(a, b) {
