@@ -1,17 +1,4 @@
-# highCharts-offline-export
-highCharts offline export ,https replace,no service can export,js export 
-
-	import:
-	<script src="highcharts.js"></script>
-	<script src="exporting.min.js"></script>
-	<script src="rgbcolor.min.js"></script>
-	<script src="canvg.min.js"></script>
-
-
-	replace highcharts code as a.post function :
-
-
-	a.post = function(a, b) {
+a.post = function(a, b) {
 		var canvas = document.createElement("canvas");
 		    canvas.style.display = "none";
 		    canvas.setAttribute("id", "canvasTemp");
@@ -27,5 +14,4 @@ highCharts offline export ,https replace,no service can export,js export
 			aTemp.setAttribute("download", "export.png");
 			aTemp.click();
 			document.body.removeChild(canvas);
-	}
-
+}
