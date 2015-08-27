@@ -17,7 +17,7 @@ highCharts offline export ,https replace,no service can export,js export
 		    canvas.setAttribute("id", "canvasTemp");
 		    document.body.appendChild(canvas); 
 		    
-		    canvg(canvas, b.svg);
+		    canvg(canvas, b.svg);  //dependency canvg.min.js and rgbcolor.min.js ,must import
 
 		var canvasDone = document.getElementById("canvasTemp");
 		var base64 = canvasDone.toDataURL("image/png");
